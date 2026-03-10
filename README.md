@@ -30,7 +30,9 @@ ui-upgrade-playbook/
 ├── playbooks/
 │   ├── 01-audit/             # Audit current UI state
 │   ├── 02-foundation/        # Setup design tokens + base styles
+│   ├── 02.5-layout/          # Layout patterns (typography, spacing)
 │   ├── 03-components/        # Rebuild component library
+│   ├── 03.5-interactions/    # Micro-interactions (hover, loading, etc.)
 │   └── 04-ux-flows/          # Fix navigation + user flows
 ├── validation/
 │   └── checklist.md          # Verification criteria per step
