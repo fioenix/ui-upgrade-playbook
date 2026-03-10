@@ -8,6 +8,18 @@
 
 Run these checklists after completing each playbook. All items must pass before proceeding to the next playbook.
 
+**Quick verify commands:**
+```bash
+# Check for hardcoded colors (should find 0)
+grep -rn "#[0-9a-fA-F]\{3,6\}" src/ | grep -v "node_modules\|test" | wc -l
+
+# Check for hardcoded spacing (should find 0)
+grep -rn "margin.*[0-9]px\|padding.*[0-9]px" src/ | grep -v "node_modules\|test" | wc -l
+
+# Check for hardcoded font sizes (should find 0)
+grep -rn "font-size.*[0-9]px" src/ | grep -v "node_modules\|test" | wc -l
+```
+
 ---
 
 ## ✅ Playbook 01: Audit Validation
@@ -56,6 +68,21 @@ Run these checklists after completing each playbook. All items must pass before 
 - [ ] Transition durations defined
 - [ ] Breakpoints defined
 - [ ] Z-index scale defined
+
+### Verification Commands
+```bash
+# Should find 0 hardcoded colors
+grep -rn "#[0-9a-fA-F]\{3,6\}" src/ | grep -v "node_modules\|test" | wc -l
+# Expected: 0
+
+# Should find 0 hardcoded spacing
+grep -rn "margin.*[0-9]px\|padding.*[0-9]px" src/ | grep -v "node_modules\|test" | wc -l
+# Expected: 0
+
+# Should find 0 hardcoded font sizes
+grep -rn "font-size.*[0-9]px" src/ | grep -v "node_modules\|test" | wc -l
+# Expected: 0
+```
 
 ### CSS Variables
 - [ ] `variables.css` created
@@ -110,6 +137,17 @@ Run these checklists after completing each playbook. All items must pass before 
 - [ ] Keyboard accessible (Enter, Space)
 - [ ] Loading spinner shows
 - [ ] Tests pass (≥90% coverage)
+
+### Verification Commands
+```bash
+# Check Button uses tokens (should find token references)
+grep -rn "var(--color-primary\|var(--spacing-" src/components/Button | wc -l
+# Expected: > 0
+
+# Check no hardcoded colors in Button
+grep -rn "#[0-9a-fA-F]" src/components/Button | wc -l
+# Expected: 0
+```
 
 ### Input Component
 - [ ] Types: text, email, password, number, tel, url, search
