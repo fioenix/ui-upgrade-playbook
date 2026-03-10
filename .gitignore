@@ -1,0 +1,100 @@
+# ==========================
+# OS & Editor
+# ==========================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.sublime-*
+
+# ==========================
+# Dependencies & Build
+# ==========================
+node_modules/
+.pnp
+.pnp.js
+bower_components/
+vendor/
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# ==========================
+# Logs & Debug
+# ==========================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+coverage/
+*.lcov
+.nyc_output/
+
+# ==========================
+# Environment & Secrets
+# ==========================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+secrets/
+credentials/
+
+# ==========================
+# Testing
+# ==========================
+*.snap
+.jest/
+test-results/
+playwright-report/
+
+# ==========================
+# Documentation Outputs
+# ==========================
+# Keep templates, ignore generated audit reports
+audit-report.md
+*.audit.md
+reports/
+
+# ==========================
+# Media (Optional)
+# ==========================
+# Uncomment if you don't want screenshots in repo
+# *.png
+# *.jpg
+# *.jpeg
+# *.gif
+# *.svg
+# screenshots/
+# examples/before-after/*.png
+
+# ==========================
+# Temporary Files
+# ==========================
+tmp/
+temp/
+.tmp/
+.cache/
+.parcel-cache/
+
+# ==========================
+# Package Manager Locks (Optional)
+# ==========================
+# Keep these for reproducibility, but can ignore if preferred
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
