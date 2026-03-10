@@ -63,7 +63,9 @@ ui-upgrade-playbook/
 | **01-Audit** | Assess current UI state | 15-30 min | Audit report + priority list |
 | **02.5-Select** | Choose UI library | 15-30 min | Library selection + setup |
 | **02-Foundation** | Setup design tokens | 30-60 min | tokens.json + global styles |
+| **02.5-Layout** | Layout patterns | 30-45 min | Consistent layouts |
 | **03-Components** | Rebuild components | 2-4 hours | Component library |
+| **03.5-Interactions** | Micro-interactions | 30-45 min | Polished animations |
 | **04-UX-Flows** | Fix navigation flows | 1-2 hours | Improved UX patterns |
 
 ---

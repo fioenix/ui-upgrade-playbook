@@ -108,7 +108,57 @@ cat playbooks/02-foundation/02-select-design-system-prompts.md
 
 ---
 
+### Step 3.5: Run Playbook 02.5 - Layout (30-45 min)
+
+```bash
+# 1. Apply typography hierarchy
+# 2. Apply spacing scale
+# 3. Use common layouts
+# Output: Consistent layouts across pages
+```
+
+**Key prompts:**
+- "Apply typography hierarchy"
+- "Replace hardcoded spacing with tokens"
+- "Test responsive breakpoints"
+
+---
+
 ### Step 4: Run Playbook 03 - Components (2-4 hours)
+
+```bash
+# 1. Create design tokens
+# 2. Generate CSS variables
+# 3. Setup global styles
+# Output: src/design/tokens.json, src/styles/*.css
+```
+
+**Key prompts:**
+- "Generate design tokens from audit"
+- "Convert tokens to CSS variables"
+- "Create global styles"
+
+---
+
+### Step 4.5: Run Playbook 03.5 - Interactions (30-45 min)
+
+```bash
+# 1. Add hover effects
+# 2. Add loading states
+# 3. Add success/error feedback
+# 4. Add transitions
+# Output: Polished, responsive UI
+```
+
+**Key prompts:**
+- "Add hover effects to buttons and cards"
+- "Add skeleton loading states"
+- "Add toast notifications"
+- "Respect prefers-reduced-motion"
+
+---
+
+### Step 5: Run Playbook 04 - UX Flows (1-2 hours)
 
 ```bash
 # 1. Create Button component
