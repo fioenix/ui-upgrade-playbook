@@ -35,6 +35,11 @@ Ensure these skills are available:
 
 See `skills/required-skills.md` for installation.
 
+**First-time setup:**
+1. Read `AGENTS.md` — Understand agent protocol
+2. Verify skills are ready
+3. Start with Playbook 01
+
 ---
 
 ### Step 2: Run Playbook 01 - Audit (15-30 min)
@@ -153,7 +158,7 @@ cat validation/checklist.md
 
 | Document | When to Use |
 |----------|-------------|
-| `AGENT-INSTRUCTIONS.md` | First time setup |
+| `AGENTS.md` | First time setup, agent protocol |
 | `skills/required-skills.md` | Before starting |
 | `design-system/tokens.json` | Reference token values |
 | `design-system/guidelines.md` | Design decisions |

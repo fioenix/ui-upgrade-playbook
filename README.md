@@ -20,7 +20,7 @@ This framework is designed for **AI agents**, not humans. Every document, prompt
 ```
 ui-upgrade-playbook/
 ├── README.md                 # This file
-├── AGENT-INSTRUCTIONS.md     # How agents should use this framework
+├── AGENTS.md                 # How agents should use this framework
 ├── skills/
 │   └── required-skills.md    # Agent skills to install + activation
 ├── design-system/
@@ -43,7 +43,7 @@ ui-upgrade-playbook/
 ## 🚀 Quick Start for Agents
 
 ```markdown
-1. Read AGENT-INSTRUCTIONS.md first
+1. Read AGENTS.md first
 2. Install required skills (see skills/required-skills.md)
 3. Execute playbooks in order:
    - 01-Audit
